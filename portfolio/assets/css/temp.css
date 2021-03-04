@@ -1,0 +1,371 @@
+@media screen and (min-width: 801px) {
+    @import url(https://fonts.googleapis.com/css?family=Josefin+Sans);
+    body, h1, h2, h3, h4, h5, h6, p, address, ul, ol, li, dl, dt, dd, table, caption, th, td, img, form {
+        margin: 0;
+        padding: 0;
+        border: none;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 16px;
+        list-style-type: none;
+        letter-spacing: 1.5px;
+        line-height: 2em;
+    }
+    textarea {
+        font-size: 100%;
+    }
+    img {
+        vertical-align: bottom;
+    }
+    hr {
+        display: none;
+    }
+    html {
+        min-height: 620px;
+        height: 100%;
+        overflow-y: scroll;
+    }
+
+
+    
+    body {
+        font-family: '微軟正黑體', 'Josefin Sans', sans-serif;
+        background: #fff;
+        color: #011635;
+        overflow: hidden;
+    }
+
+    body:before, body:after {
+        content: "";
+        display: block;
+        height: 1px;
+        background: -webkit-gradient(linear, left top, right bottom, from(#F2DDDE), to(#89ABE3));
+        background: -moz-linear-gradient(left, #F2DDDE, #89ABE3);
+        background: linear-gradient(left, #F2DDDE, #89ABE3);
+    }
+    a {
+        text-decoration: none;
+        color: #000;
+    }
+    a:hover {
+        text-decoration: none;
+        color: #888;
+    }
+    a.alpha {
+        opacity: 1.0;
+        filter: alpha(style=0, opacity=100)
+    }
+    a.alpha:hover {
+        opacity: 0.7;
+        filter: alpha(style=0, opacity=70)
+    }
+    .smart_view {
+        display: none;
+    }
+    #loader {
+        width: 256px;
+        height: 256px;
+        display: none;
+        position: fixed;
+        _position: absolute;
+        /* IE6 */
+        top: 50%;
+        left: 50%;
+        margin-top: -128px;
+        /* height的一半 */
+        margin-left: -128px;
+        /* width的一半 */
+        z-index: 100;
+    }
+    #fade {
+        width: 100%;
+        height: 100%;
+        display: none;
+        background-color: #FFFFFF;
+        position: absolute;
+        top: 0px;
+        left: 0px;
+        z-index: 50;
+    }
+    #loader img {
+        text-align: center;
+    }
+    /* header部分 */
+    header .mainimg {}
+    header .mainimg img {
+        width: 100%;
+        height: auto;
+    }
+    header .drawer-toggle p {
+        margin-left: -7px;
+        margin-top: 15px;
+    }
+    header nav.mainnav {
+        border-bottom: 1px solid #eee;
+        overflow: hidden;
+        padding: 20px 0;
+        width: 100%;
+    }
+    header nav.mainnav ul {
+        margin: 0 auto;
+        width: 640px;
+    }
+    header nav.mainnav li {
+        float: left;
+        font-size: 16px;
+        padding: 0 30px;
+        width: 100px;
+        letter-spacing: 4px;
+        text-align: center;
+    }
+    /* 內容共用部分 */
+    section {
+  
+        margin: 75px auto;
+        width: 838px;
+        overflow: hidden;
+        clear: both;
+        padding-bottom: 15px;
+    }
+    section h2 {
+        color: #011635;
+        
+        border-bottom: 2px solid #011635;
+        font-size: 26px;
+        margin: 0 auto 50px;
+        padding-bottom: 5px;
+        text-align: center;
+        width: -moz-fit-content;
+        letter-spacing: 4px;
+    }
+    /* 個人資料部分 */
+    section.profile {}
+    section.profile .profile_head {
+        clear: both;
+        margin: 0 auto 0px;
+        overflow: hidden;
+        padding-bottom: 0px;
+        width: 450px;
+    }
+    section.profile .profile_head .left {
+        float: left;
+    }
+    section.profile .profile_head .right {
+        float: right;
+        padding-top: 20px;
+    }
+    section.profile .profile_bottom {
+        border-bottom: 1px dotted #eee;
+        margin-bottom: 25px;
+        text-align: center;
+    }
+    section.profile .profile_bottom p {
+        margin-bottom: 25px;
+    }
+    section.profile .profile_awards {
+        text-align: center;
+    }
+    section.profile .profile_awards h3 {
+        margin-bottom: 10px;
+        font-size: 14px;
+		font-weight: bold;
+    }
+    section.profile .profile_awards p {
+        margin-bottom: 20px;
+    }
+    /* 作品集部分 */
+    section.works {}
+    section.works .workspace {
+        clear: both;
+        overflow: hidden;
+    }
+    section.works .workspace li {
+        float: left;
+        margin: 0px 10px 30px 0;
+    }
+    section.works .workspace li:nth-child(4n) {
+        margin-right: 0;
+    }
+    section.works .workspace li a {
+        display: block;
+        border: 1px solid #e3e3e3;
+    }
+    section.works .workspace figure {
+        height: 200px;
+        margin: 0;
+        overflow: hidden;
+        padding: 0;
+        position: relative;
+        width: 200px;
+    }
+    section.works .workspace figure img {
+        filter: grayscale(0%);
+        -webkit-filter: grayscale(0%);
+    }
+    section.works .workspace figcaption {
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: 2;
+        width: 100%;
+        height: 100%;
+        background: rgba(0, 0, 0, .6);
+        -webkit-transition: .3s;
+        transition: .3s;
+        opacity: 0;
+        text-align: center;
+        color: #fff;
+        padding-top: 95px;
+    }
+    section.works .workspace figure:hover figcaption {
+        opacity: 1;
+    }
+    section.works .workspace figure:hover img {
+        filter: grayscale(90%);
+        -webkit-filter: grayscale(90%);
+    }
+    section.works .workspace .button {
+        background-color: #333;
+        border: 2px solid #333;
+        color: #fff;
+        line-height: 50px;
+    }
+    section.works .button {
+        display: inline-block;
+        width: 200px;
+        height: 54px;
+        text-align: center;
+        text-decoration: none;
+        line-height: 54px;
+        outline: none;
+    }
+    section.works .button::before, section.works .button::after {
+        position: absolute;
+        z-index: -1;
+        display: block;
+        content: '';
+    }
+    section.works .button, section.works .button::before, section.works .button::after {
+        -webkit-box-sizing: border-box;
+        -moz-box-sizing: border-box;
+        box-sizing: border-box;
+        -webkit-transition: all .3s;
+        transition: all .3s;
+    }
+    section.works .button {
+        background-color: #333;
+        border: 2px solid #333;
+        color: #fff;
+        line-height: 50px;
+    }
+    section.works .button:hover {
+        background-color: #fff;
+        border-color: #333;
+        color: #333;
+    }
+    section.works .center_button {
+        text-align: center;
+        margin-top: 50px;
+    }
+    /* footer部分 */
+    footer {
+        color: #000;
+        padding: 10px 0;
+        text-align: center;
+        width: 100%;
+    }
+    footer p {
+        font-size: 10px;
+    }
+
+
+   .kv {
+    background-image: url("images/kv.jpg"); 
+    background-color: #011635;
+    height: auto; 
+    background-position: center;
+    background-repeat: no-repeat; 
+    background-size: cover;
+}
+
+.boxBanner {
+  display: block;
+  width: 100%;
+}
+
+.topbanner {
+  width: 100%;
+  clear: both;
+  overflow: hidden;
+  text-align: center;
+}
+
+
+.box1 {
+  margin: 40px 0px;
+  display: inline-block;
+  width: 100%;
+}
+
+.box2 {
+  margin: 65px 0px;
+  display: inline-block;
+  width: 100%;
+}
+
+
+.topics {
+  display: inline-block;
+    float: left;
+    width: 50%;
+}
+
+.topics img {
+      width: 65%;
+    padding: 90px 0px 0px 80px;
+}
+
+
+.banner {
+  display: inline-block;
+    float: left;
+    width: 50%;
+  
+}
+
+
+.banner img {
+   width: 75%;
+   padding: 60px 80px 0px 0px;
+}
+
+
+.scroll {
+  display: inline-block;
+  width: 100%;
+  padding: 60px 0px 50px 0px;
+}
+
+.scroll img {
+  width: 4%;
+}
+
+
+    /* 歷史紀錄部分 */
+    .workspace02 {
+        margin: 0 auto;
+        width: 500px;
+    }
+    .workspace02 li {
+        border-bottom: 1px dotted #89ABE3;
+        padding-bottom: 15px;
+        margin-bottom: 15px;
+        font-size: 12px;
+    }
+    .workspace02 li span {
+        background-color: #89ABE3;
+        color: #fff;
+        margin-right: 10px;
+        padding: 4px 2px 4px 8px;
+    }
+}
